@@ -1,0 +1,187 @@
+	@font-face { font-family:"Helvetica Neue LT Pro"; src: url(../fonts/HelveticaNeueLTPro-lt.woff2); }
+	@font-face { font-family:"Helvetica Neue LT Pro Bd"; src: url(../fonts/HelveticaNeueLTPro-Bd.woff2); }
+
+	.banner {
+		background: #000105;
+		max-width: 710px;
+		height: 140px;
+		margin: auto;
+		color:#FFF;
+		position: relative;
+	}
+		.img{
+			width: 191px;
+			height: 140px;
+			background-image:url('../fbplayer.png');
+			float: left;
+		}
+		.countdown {
+			width: 348px;
+			grid-template-columns: none;
+			position: absolute;
+			left: 160px;
+			top: 10px;
+			font-family: "Helvetica Neue LT Pro Bd";
+		}
+			.countdown .timer {
+				background: #ff1805;
+				width: 50px;
+				height: 50px;
+				text-align: center;
+				vertical-align: middle;
+				margin: 1px;
+				float: left;
+			}
+				.countdown .und {
+					font-size: 11px;
+				}
+				.countdown .value {
+					font-size: 26px;
+				}
+			.countdown .timertitle {
+				background: #f0f0f0;
+				height: 50px;
+				vertical-align: middle;
+				margin: 12px auto auto 22px;
+				display: block;
+				float: left;
+			}
+				.text1 {
+					font-size: 13px;
+					display: block;
+					position: absolute;
+				}
+		.hurryMessage {
+			display: block;
+			position: absolute;
+			left: 160px;
+			top: 80px;
+		}
+			.text2 {
+				font-size: 24px;
+				color: #fee801;
+				display: block;
+				font-family: "Helvetica Neue LT Pro Bd";
+			}
+			.text3 {
+				font-size: 14px;
+				display: block;
+				font-family: "Helvetica Neue LT Pro";
+			}
+		.buttonBox {
+			width: 180px;
+			height: 113px;
+			background: #1a1a1a;
+			float: right;
+			text-align: center;
+			padding-top: 27px;
+			font-family: "Helvetica Neue LT Pro Bd";
+		}
+		.buttonBox button {
+			background: linear-gradient(#febd17, #fe9917);
+			box-shadow: 0px 2px #8b540d;
+			border-radius: 4px;
+			border:none;
+			width: 120px;
+			height: 50px;
+			margin: 0 0 17px 0;
+			cursor: pointer;
+			font-family: "Helvetica Neue LT Pro Bd";
+			font-size: 12px;
+		}
+		.buttonBox button:hover {
+			background: linear-gradient(#fe9917, #febd17);
+		}
+		.buttonBox button:hover {
+			background: linear-gradient(#fe9917, #febd17);
+		}
+		.buttonBox button:active {
+			background-color: #3e8e41;
+			box-shadow: 0 2px #8b540d;
+			transform: translateY(1px);
+		}
+		.buttonBox span, .buttonBox a {
+			display: block;
+			font-size: 12px;
+		}
+		a:link, a:visited, a:hover, a:active {
+			text-decoration: none;
+		    color: #FFF;
+		}
+
+	@media screen and (max-width: 680px) {
+		.banner { 
+			height: 150px;
+		}
+		.img{
+			position: relative;
+			top:10px;
+		}
+		.countdown {
+		    width: 124px;
+		}
+			.countdown .timertitle {
+				display: block;
+				margin-top: 2px;
+				text-align: center;
+			}
+				.text1 {
+					left: -20px;
+				}
+		.hurryMessage {
+			width: 150px;
+			display: block;
+			position: absolute;
+			left: 45%;
+			top: 25px;
+		}
+			.text2 {
+				font-size: 22px;
+			}
+		.buttonBox {
+			height: 120px;
+		}
+	}
+
+	@media screen and (max-width: 620px) {
+		.banner {
+			position: relative;
+			width: 340px;
+			height: 250px;
+		}
+		.img {
+			top: 100px;
+			left: 0px;
+		}
+		.countdown {
+			position: absolute;
+		    width: 124px;
+			top: 85px;
+			left: 190px;
+		}
+			.countdown span {
+				text-align: center;
+				left: -20px;
+			}
+		.hurryMessage {
+			width: 340px;
+			display: block;
+			position: absolute;
+			top: 10px;
+			left: 0px;
+		}
+			.text2, .text3 {
+				position: relative;
+				top: 0px;
+				width: 340px;
+				float: left;
+				text-align: center;
+			}
+		.buttonBox {
+			width: 100%;
+			display: block;
+			position: relative;
+			top:100px;
+			left: 0;
+		}
+	}
